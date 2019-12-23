@@ -28,7 +28,7 @@ app.post("/contact/send",function(req,res){
         }
     });
     var mailOptions={
-        from: ''//enter the from email,
+        from: '',//enter the from email,
         to: req.body.email,
         subject: 'Test of Website Submission',
         text: 'Name: '+req.body.name+' Email: '+req.body.email+" Message: "+req.body.message,
